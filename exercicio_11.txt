@@ -1,0 +1,45 @@
+
+//Elabore um algoritmo que peça várias idades ao utilizador e calcule a média das idades
+//(a quantidade de idades será definida pelo utilizador). Apresente a representação em Pseudocódigo.
+
+programa {
+  funcao inicio() {
+    
+    inteiro quantidade, contador
+    inteiro idade
+    real soma, media
+    
+    // Inicializar acumulador
+    soma = 0
+    
+    // Perguntar quantas idades serão digitadas
+    escreva("Quantas idades deseja informar? ")
+    leia(quantidade)
+    
+    // Validar se quantidade é positiva
+    se (quantidade <= 0) {
+      escreva("Erro: A quantidade deve ser maior que zero!")
+    } senao {
+      
+      // Loop para ler cada idade
+      para (contador = 1; contador <= quantidade; contador++) {
+        
+        escreva("Digite a idade ", contador, ": ")
+        leia(idade)
+        
+        // Somar idades
+        soma = soma + idade
+      }
+      
+      // Calcular média
+      media = soma / quantidade
+      
+      // Mostrar resultados formatados
+      escreva("\n============================")
+      escreva("\nTotal de idades: ", quantidade)
+      escreva("\nSoma das idades: ", soma)
+      escreva("\nMédia das idades: ", media)
+      escreva("\n============================")
+    }
+  }
+}

@@ -1,0 +1,77 @@
+
+//Elabore um algoritmo que imprima os números ímpares do intervalo [a, b] . Note que
+//o limite inferior do intervalo deve ser inferior ou igual ao limite superior. Apresente a representação em Pseudocódigo.
+
+programa {
+  funcao inicio() {
+    
+    // DECLARAÇÃO DE VARIÁVEIS
+    // 'a' e 'b' → limites do intervalo [a, b]
+    // 'numero'  → variável de controle do loop, percorre de a até b
+    // Tipo 'inteiro' porque trabalhamos apenas com números inteiros
+
+    inteiro a, b, numero
+    
+    // ENTRADA DE DADOS
+    // Solicita e lê o limite inferior do intervalo
+    escreva("Limite inferior (a): ")
+    leia(a)
+    
+    // Solicita e lê o limite superior do intervalo
+    escreva("Limite superior (b): ")
+    leia(b)
+    
+    // VALIDAÇÃO DO INTERVALO
+    // O enunciado exige que: limite inferior ≤ limite superior (a ≤ b)
+    // Se a > b, o intervalo é inválido e não processamos
+
+    se (a > b) {
+      
+      escreva("Erro: Intervalo inválido!")
+      
+    } senao {
+
+      // CASO VÁLIDO: a ≤ b
+      
+      // Inicializa 'numero' com o limite inferior 'a'
+      // Será nossa variável de controle do loop
+      numero = a
+      
+      // Mensagem inicial antes de listar os ímpares
+      escreva("\nÍmpares: ")
+      
+
+      // ESTRUTURA DE REPETIÇÃO: enquanto
+      // Percorre todos os números do intervalo [a, b]
+      // Condição: continua enquanto 'numero' for menor ou igual a 'b'
+
+      enquanto (numero <= b) {
+        
+        // VERIFICAÇÃO SE É ÍMPAR
+        // Operador % (módulo) retorna o RESTO da divisão
+        // numero % 2 → resto da divisão por 2
+
+        // Se resto != 0 → número é ÍMPAR (ex: 5 % 2 = 1)
+        // Se resto == 0 → número é PAR   (ex: 4 % 2 = 0)
+
+        se (numero % 2 != 0) {
+          
+          // Imprime o número ímpar seguido de espaço
+          escreva(numero, " ")
+          
+        }
+        // Fim do 'se' - se for par, não faz nada e continua
+        
+        // INCREMENTO
+        // Avança para o próximo número do intervalo
+        // ESSENCIAL: sem isso, o loop seria INFINITO!
+
+        numero = numero + 1
+        
+      }
+      // Fim do 'enquanto' - quando numero > b, sai do loop
+      
+    }
+    
+  }
+}

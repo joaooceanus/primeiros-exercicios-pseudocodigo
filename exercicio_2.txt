@@ -1,0 +1,26 @@
+
+//Elabore um algoritmo que que peça ao utilizador dois números e calcule a média dos dois números. Deverá escrever no ecrã “A Média dos números é : ” + a média dos
+//números. Apresente a representação em Pseudocódigo.
+
+programa
+{
+
+	funcao inicio()
+	{
+
+		real a, b, soma, div
+		
+		escreva("Digite o primeiro número: ")
+		leia(a)
+
+		escreva("Digite o segundo número: ")
+		leia(b)
+
+		soma = a + b
+		div  = (a + b) / 2
+
+		escreva("\nA Soma dos números é: ", soma) 		
+		escreva("\nA Média dos números é: ", div, "\n") 
+	}
+}
+

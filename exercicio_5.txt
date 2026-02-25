@@ -1,0 +1,25 @@
+
+
+//Elabore um algoritmo que peça ao utilizador um número e verifique se o mesmo par ou ímpar. Deverá escrever no ecrã “Par” no caso de ser “Par” ou “Impar”, no
+//caso de ser “Ímpar”. Apresente a representação em Pseudocódigo.
+
+programa 
+{ 
+	funcao inicio () 
+	{
+
+		inteiro numero
+		
+		escreva("Digite um número inteiro: ")
+		leia(numero)
+
+		se(numero%2==0){
+			escreva("O número é Par")
+		}
+		senao{
+			escreva("O número é impar")
+		}
+		
+	} 
+}
+

@@ -1,0 +1,35 @@
+
+//Elabore um algoritmo que calcule a classificação final de um aluno, sabendo as notas
+//que obteve em três testes e a ponderação atribuída a cada um deles.
+//As 3 notas têm de ser entre 0 e 20 valores.
+
+// 1° - 20%.    2° - 50%.   3° - 30%
+    
+//Se a classificação final for superior ou igual a dez, o aluno está aprovado; caso
+//contrário, está reprovado. Apresente a representação em Pseudocódigo.
+
+programa {
+
+  funcao inicio() {
+    
+   real teste1, teste2, teste3, class_final
+
+   escreva("Digitar nota do teste 1: ")
+   leia(teste1)
+
+   escreva("Digitar nota do teste 2: ")
+   leia(teste2)
+
+   escreva("Digitar nota do teste 3: ")
+   leia(teste3)
+
+   class_final = teste1*0.2 + teste2*0.5 + teste3*0.3
+
+   se(class_final>=10)
+   
+   {escreva("Aprovado com a classficação de: ", class_final, "valores\n")}
+  
+  senao{escreva("Reprovado com a classificação de: ", class_final, "valores\n")}
+
+}
+}

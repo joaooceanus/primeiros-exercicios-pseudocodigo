@@ -1,0 +1,27 @@
+
+// Elabore um algoritmo que calcule e mostre a soma e a média dos números pares entre 1 e 100, inclusive. Apresente a representação em Pseudocódigo.
+
+programa {
+  funcao inicio() {
+    
+// As variavel do sistema (começo do codigo)
+    inteiro i, soma_pares=0, cont_n_pares=0
+    real media
+
+    para(i=1; i<=100; i++){
+      se (i%2==0){
+        soma_pares = soma_pares + i
+        cont_n_pares++
+      }
+   }
+//testes de funcionabilidade
+  escreva("Soma dos pares é ", soma_pares)
+  escreva("\nTotal pares é ", cont_n_pares)
+//Acaba o teste de funcionabilidade aqui.
+
+  media = soma_pares / cont_n_pares
+
+  escreva("\nMédia é: ", media)
+  }
+}
+

@@ -1,0 +1,40 @@
+
+//Elabore um algoritmo que peça 10 números e imprimir o maior e o menor. Apresente a representação em Pseudocódigo.
+
+programa {
+  funcao inicio() {
+    
+    inteiro contador
+    real numero, maior, menor
+    
+    // Ler o primeiro número fora do loop para inicializar maior e menor
+    escreva("Digite o 1º número: ")
+    leia(numero)
+    
+    maior = numero
+    menor = numero
+    
+    // Loop para os outros 9 números
+    para (contador = 2; contador <= 10; contador++) {
+      
+      escreva("Digite o ", contador, "º número: ")
+      leia(numero)
+      
+      // Verificar se é maior
+      se (numero > maior) {
+        maior = numero
+      }
+      
+      // Verificar se é menor
+      se (numero < menor) {
+        menor = numero
+      }
+    }
+    
+    // Mostrar resultados
+    escreva("\n========================")
+    escreva("\nMaior número: ", maior)
+    escreva("\nMenor número: ", menor)
+    escreva("\n========================")
+  }
+}

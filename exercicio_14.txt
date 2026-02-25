@@ -1,0 +1,44 @@
+
+//Um aluno de Desenvolvimento de Software obtém aprovação se obtiver 10 ou mais valores em cada uma das disciplinas: Matemática, Programação e Sistemas de
+//Informação; é aprovado com distinção se obtiver 16 valores ou mais em pelo menos duas disciplinas e for aprovado na terceira;
+//reprova nos restantes casos. Elabore um algoritmo e apresente a representação em Pseudocódigo.
+
+programa {
+  funcao inicio() {
+    
+    inteiro quantidade, contador
+    inteiro idade
+    real soma, media
+    
+    // Inicializar acumulador
+    soma = 0
+    
+    // Perguntar quantas idades serão digitadas
+    escreva("Quantas idades deseja informar? ")
+    leia(quantidade)
+    
+    // Validar quantidade
+    se (quantidade <= 0) {
+      escreva("Quantidade inválida!")
+    } senao {
+      
+      // Loop para ler cada idade
+      para (contador = 1; contador <= quantidade; contador++) {
+        
+        escreva("Digite a idade ", contador, ": ")
+        leia(idade)
+        
+        // Acumular na soma
+        soma = soma + idade
+      }
+      
+      // Calcular média
+      media = soma / quantidade
+      
+      // Mostrar resultado
+      escreva("\nSoma das idades: ", soma, "\n")
+      escreva("Quantidade: ", quantidade, "\n")
+      escreva("Média das idades: ", media)
+    }
+  }
+}

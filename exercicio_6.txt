@@ -1,0 +1,45 @@
+
+//Como fazer Menu
+
+programa {
+  funcao inicio() {
+
+  inteiro op
+  real num1, num2
+
+  escreva("Insira um número: ")
+  leia(num1)
+
+  escreva("Insira um número: ")
+  leia(num2)
+
+  escreva("-------Menu-------\n")
+  escreva("1 - Soma\n")
+  escreva("2 - Subtração\n")
+  escreva("3 - Multiplicação\n")
+  escreva("4 - Divisão\n")
+  leia(op)
+
+  escolha(op)
+  {
+    caso 1:
+    escreva("A soma é ", num1 + num2)
+    pare
+
+    caso 2:
+    escreva("A subtração é ", num1 - num2)
+    pare
+
+    caso 3:
+    escreva("A multiplicaçãoo é ", num1 * num2)
+    pare
+
+    caso 4:
+    escreva("A divisão é ", num1 + num2)
+    pare
+  }
+
+
+    
+  }
+}

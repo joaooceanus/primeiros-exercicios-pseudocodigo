@@ -1,0 +1,21 @@
+
+//Elabore um algoritmo que converta graus Fahrenheit em Celsius segundo a seguinte fórmula: C= (F-32) / 1.8
+//Apresente a representação em Pseudocódigo.
+
+programa
+{
+
+	funcao inicio()
+	{
+
+		real C, F, sub, div
+
+		escreva("Digite o grau em Fahrenheit: ")
+		leia(F)
+
+    C= (F-32) / 1.8
+
+		escreva("\nO grau em Celsius: ", C, "\n")
+	}
+}
+
